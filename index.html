@@ -54,14 +54,9 @@
         color: white;
       }
 
-      .infos p {
-        width: 60%;
-      }
-
       .infos h1 {
         font-weight: 800;
         font-size: 2.5rem;
-        width: 60%;
       }
 
       .image {
@@ -74,16 +69,17 @@
 
       .hero {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 100vw;
+        max-width: 1600px;
         gap: 4rem;
-        margin-left: 8rem;
+        margin: auto;
+        padding: 1rem;
       }
 
       button {
-        background-color: hsl(300, 69%, 71%);
-        color: white;
+        background-color: white;
+        color: hsl(300, 69%, 71%);
         font-family: inherit;
         border: none;
         outline: none;
@@ -95,6 +91,13 @@
         box-shadow: 2px 5px 20px black;
         vertical-align: middle;
         cursor: pointer;
+        transition: 0.5s all;
+      }
+
+      button:hover {
+        color: white;
+        background-color: hsl(300, 69%, 71%);
+        transform: translateY(10px);
       }
 
       .media {
@@ -110,7 +113,7 @@
         margin: 8px;
       }
 
-      @media screen and (max-width: 1440px) {
+      @media screen and (max-width: 1024px) {
         .hero {
           flex-direction: column;
           justify-content: center;
