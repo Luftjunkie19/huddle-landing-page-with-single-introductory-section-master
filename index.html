@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
@@ -30,6 +38,9 @@
         height: 100vh;
         font-family: "Open Sans", sans-serif;
         overflow-x: hidden;
+        position: relative;
+        top: 0;
+        left: 0;
       }
 
       nav {
@@ -86,6 +97,19 @@
         cursor: pointer;
       }
 
+      .media {
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+      }
+
+      .media a {
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+        margin: 8px;
+      }
+
       @media screen and (max-width: 1440px) {
         .hero {
           flex-direction: column;
@@ -119,6 +143,14 @@
           font-size: 2.5rem;
           width: 100%;
         }
+
+        .media {
+          position: static;
+          display: flex;
+          justify-content: space-around;
+          align-items: end;
+          margin: 2rem;
+        }
       }
     </style>
   </head>
@@ -141,6 +173,18 @@
         </p>
         <button>Register</button>
       </div>
+    </div>
+
+    <div class="media">
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
     </div>
   </body>
 </html>
